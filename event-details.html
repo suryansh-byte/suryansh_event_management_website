@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Details & Registration | Suryansh Kala & Sanskriti Foundation</title>
+    <meta name="description" content="View event details and register for upcoming cultural experiences of the Suryansh Kala and Sanskriti Foundation." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Suryansh Kala and Sanskriti Foundation home">
+          <img src="images/suryansh-logo.png?v=20261107" alt="Suryansh Kala and Sanskriti Foundation logo" class="brand-logo" />
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="raaga-rangaa.html">Raaga Rangaa</a></li>
+            <li><a href="naatya-rangaa.html">Naatya Rangaa</a></li>
+            <li><a href="naataka-rangaa.html">Naataka Rangaa</a></li>
+            <li><a href="vaadhya-rangaa.html">Vaadhya Rangaa</a></li>
+            <li><a href="naattu-rangaa.html">Naattu Rangaa</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+          <a class="nav-cta" href="events.html">Explore Events</a>
+          <button class="nav-toggle" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main data-detail-page>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <div class="eyebrow" style="color: #f4d4a3;">Event details</div>
+            <h1 data-detail-title>Event title</h1>
+            <p class="page-intro" data-detail-subtitle>Event description</p>
+          </div>
+          <img data-detail-image src="" alt="Event poster" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container detail-grid">
+          <article class="detail-card">
+            <img data-detail-image src="" alt="Event poster" />
+            <div class="meta-row">
+              <span data-detail-category>Category</span>
+              <span>•</span>
+              <span>Registration open</span>
+            </div>
+            <h2 class="h2-title" data-detail-title>Event name</h2>
+            <div class="detail-meta">
+              <span>📅 <strong data-detail-date></strong></span>
+              <span>📍 <strong data-detail-venue></strong></span>
+            </div>
+            <p data-detail-description></p>
+            <ul class="highlight-list" data-detail-highlights>
+            </ul>
+          </article>
+
+          <aside class="registration-card">
+            <div class="eyebrow" style="color: var(--saffron-600);">Reserve your seat</div>
+            <h3>Register now</h3>
+            <p>Be part of a meaningful celebration of Indian artistry and cultural heritage.</p>
+
+            <form id="registrationForm" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="fullName">Full Name</label>
+                  <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" placeholder="Enter your email address" required />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone Number</label>
+                  <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required />
+                </div>
+
+                <div class="field">
+                  <label for="selectedEvent">Selected Event</label>
+                  <input id="selectedEvent" name="selectedEvent" type="text" readonly />
+                </div>
+
+                <button class="btn btn-primary" type="submit">Submit Registration</button>
+              </div>
+
+              <div class="form-status" aria-live="polite"></div>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="brand footer-brand-logo-wrap">
+              <img src="images/suryansh-logo.png?v=20261107" alt="Suryansh Kala and Sanskriti Foundation logo" class="brand-logo footer-brand-logo" />
+            </div>
+            <div class="footer-strap">Preserving Heritage. Celebrating Tradition.</div>
+            <p class="footer-intro">
+              Dedicated to celebrating, preserving and promoting India’s rich cultural heritage through classical music, dance, theatre and traditional art forms.
+            </p>
+            <div class="social-links" aria-label="Social media links">
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-link" aria-label="Instagram">IG</a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" class="social-link" aria-label="Facebook">f</a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" class="social-link" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="events.html">Upcoming Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Raaga Rangaa</h4>
+            <ul class="footer-list">
+              <li><a href="raaga-rangaa.html">Classical Music</a></li>
+              <li><a href="raaga-rangaa.html">Folk Music</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Naatya Rangaa</h4>
+            <ul class="footer-list">
+              <li><a href="naatya-rangaa.html">Classical Dance</a></li>
+              <li><a href="naatya-rangaa.html">Folk Dance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <form id="footerNewsletterForm" novalidate>
+              <input type="email" name="footerEmail" placeholder="Email address" aria-label="Newsletter email" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-credit">
+            <strong>Suryansh Kala &amp; Sanskriti Foundation</strong>
+            <p>© 2026 Suryansh Kala &amp; Sanskriti Foundation. All Rights Reserved.</p>
+            <p>Designed &amp; Developed by Suryansh Sahu</p>
+            <p>KIIT Explore – Web Designing Project</p>
+            <p>School of Computer Engineering · KIIT Deemed to be University</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

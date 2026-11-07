@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | Suryansh Kala & Sanskriti Foundation</title>
+    <meta name="description" content="Browse cultural events, festivals, performances and workshops celebrating Indian arts and heritage." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Suryansh Kala and Sanskriti Foundation home">
+          <img src="images/suryansh-logo.png" alt="Suryansh Kala and Sanskriti Foundation logo" class="brand-logo" />
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="raaga-rangaa.html">Raaga Rangaa</a></li>
+            <li><a href="naatya-rangaa.html">Naatya Rangaa</a></li>
+            <li><a href="naataka-rangaa.html">Naataka Rangaa</a></li>
+            <li><a href="vaadhya-rangaa.html">Vaadhya Rangaa</a></li>
+            <li><a href="naattu-rangaa.html">Naattu Rangaa</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+          <a class="nav-cta" href="event-details.html?id=odissi-mahotsav">Register Now</a>
+          <button class="nav-toggle" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <div class="eyebrow" style="color: #f4d4a3;">Cultural calendar</div>
+            <h1>Events</h1>
+            <p class="page-intro">Browse upcoming experiences that honour classical dance, music, theatre, folk culture and Indian heritage in its fullest expression.</p>
+            <div class="meta-row">
+              <span>6 upcoming events</span>
+              <span>•</span>
+              <span>Across India</span>
+            </div>
+          </div>
+          <img src="images/republic-day.jpg" alt="Indian Republic Day celebration with patriotic colors" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="search-box">
+            <span>⌕</span>
+            <input id="eventSearch" type="text" placeholder="Search events, cities or categories" aria-label="Search events" />
+          </div>
+
+          <div class="filters" aria-label="Category filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Classical Dance">Classical Dance</button>
+            <button class="filter-btn" data-filter="Classical Music">Classical Music</button>
+            <button class="filter-btn" data-filter="Theatre">Theatre</button>
+            <button class="filter-btn" data-filter="Folk Culture">Folk Culture</button>
+            <button class="filter-btn" data-filter="Musical Instruments">Musical Instruments</button>
+            <button class="filter-btn" data-filter="Festival">Festival</button>
+          </div>
+
+          <div class="event-grid" data-event-grid></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="brand footer-brand-logo-wrap">
+              <img src="images/suryansh-logo.png" alt="Suryansh Kala and Sanskriti Foundation logo" class="brand-logo footer-brand-logo" />
+            </div>
+            <div class="footer-strap">Preserving Heritage. Celebrating Tradition.</div>
+            <p class="footer-intro">Celebrating Indian culture and heritage through festivals, performances and artistic education.</p>
+            <div class="social-links" aria-label="Social media links">
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-link" aria-label="Instagram">IG</a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" class="social-link" aria-label="Facebook">f</a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" class="social-link" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="events.html">Upcoming Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Traditions</h4>
+            <ul class="footer-list">
+              <li><a href="raaga-rangaa.html">Raaga Rangaa</a></li>
+              <li><a href="naatya-rangaa.html">Naatya Rangaa</a></li>
+              <li><a href="naataka-rangaa.html">Naataka Rangaa</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Foundation</h4>
+            <ul class="footer-list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Our Mission</a></li>
+              <li><a href="event-details.html?id=odissi-mahotsav">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <form id="footerNewsletterForm" novalidate>
+              <input type="email" name="footerEmail" placeholder="Email address" aria-label="Newsletter email" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-credit">
+            <strong>Suryansh Kala &amp; Sanskriti Foundation</strong>
+            <p>© 2026 Suryansh Kala &amp; Sanskriti Foundation. All Rights Reserved.</p>
+            <p>Designed &amp; Developed by Suryansh Sahu</p>
+            <p>KIIT Explore – Web Designing Project</p>
+            <p>School of Computer Engineering · KIIT Deemed to be University</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

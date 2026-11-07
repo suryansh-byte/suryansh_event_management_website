@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suryansh Kala & Sanskriti Foundation | Celebrating Indian culture and heritage</title>
+    <meta name="description" content="Celebrating Indian classical arts, music, dance and cultural heritage through a vibrant cultural initiative." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Suryansh Kala and Sanskriti Foundation home">
+          <img src="images/suryansh-logo.png" alt="Suryansh Kala and Sanskriti Foundation logo" class="brand-logo" />
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="raaga-rangaa.html">Raaga Rangaa</a></li>
+            <li><a href="naatya-rangaa.html">Naatya Rangaa</a></li>
+            <li><a href="naataka-rangaa.html">Naataka Rangaa</a></li>
+            <li><a href="vaadhya-rangaa.html">Vaadhya Rangaa</a></li>
+            <li><a href="naattu-rangaa.html">Naattu Rangaa</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+          <a class="nav-cta" href="events.html">Explore Events</a>
+          <button class="nav-toggle" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <div class="eyebrow">Celebrating Indian heritage</div>
+            <h1>Celebrating the Rich Tapestry of Indian Classical Arts</h1>
+            <p>
+              Discover the timeless beauty of Indian classical arts, music, dance and traditions. Explore cultural celebrations,
+              experience artistic excellence and become part of India’s extraordinary heritage.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="events.html">View Upcoming Events</a>
+              <a class="btn btn-secondary" href="about.html">Learn About Us</a>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric">
+                <strong>05+</strong>
+                <span>Rangaa traditions</span>
+              </div>
+              <div class="metric">
+                <strong>20+</strong>
+                <span>Art experiences</span>
+              </div>
+              <div class="metric">
+                <strong>6</strong>
+                <span>Upcoming events</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="mini-card">
+              <img src="images/folk.jpg" alt="Indian folk festival and cultural celebration" />
+            </div>
+            <div class="hero-card-body">
+              <div class="meta-row">
+                <span>Festival</span>
+                <span>•</span>
+                <span>Live</span>
+              </div>
+              <h3>Next event</h3>
+              <p data-countdown>Loading countdown...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cream">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow" style="color: var(--saffron-600);">Our calendar</div>
+              <h2 class="section-title">Upcoming events</h2>
+            </div>
+            <p>Explore cultural encounters that preserve artistic excellence, regional traditions and community belonging.</p>
+          </div>
+          <div class="event-grid" data-home-events></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow" style="color: var(--saffron-600);">Explore categories</div>
+              <h2 class="section-title">Five cultural domains</h2>
+            </div>
+            <p>Each Rangaa represents a distinct expression of India’s living heritage and artistic identity.</p>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card">
+              <div class="category-icon">🎶</div>
+              <h3>Raaga Rangaa</h3>
+              <p>Hindustani and Carnatic traditions, ragas and regional music forms.</p>
+              <a href="raaga-rangaa.html">Discover more</a>
+            </article>
+            <article class="category-card">
+              <div class="category-icon">💃</div>
+              <h3>Naatya Rangaa</h3>
+              <p>Odissi, Bharatanatyam, Kathak and other expressive dance traditions.</p>
+              <a href="naatya-rangaa.html">Discover more</a>
+            </article>
+            <article class="category-card">
+              <div class="category-icon">🎭</div>
+              <h3>Naataka Rangaa</h3>
+              <p>Storytelling through theatre, folk drama and cultural plays.</p>
+              <a href="naataka-rangaa.html">Discover more</a>
+            </article>
+            <article class="category-card">
+              <div class="category-icon">🎻</div>
+              <h3>Vaadhya Rangaa</h3>
+              <p>Instruments, rhythm and the sonic heritage of Indian music.</p>
+              <a href="vaadhya-rangaa.html">Discover more</a>
+            </article>
+            <article class="category-card">
+              <div class="category-icon">✨</div>
+              <h3>Naattu Rangaa</h3>
+              <p>Folk culture, crafts, festivals and regional celebrations across the nation.</p>
+              <a href="naattu-rangaa.html">Discover more</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cream">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow" style="color: var(--saffron-600);">Featured experiences</div>
+              <h2 class="section-title">Celebrating cultural excellence</h2>
+            </div>
+            <p>Powerful moments that reflect artistry, heritage and community remembrance.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <img src="images/raaga.jpg" alt="Indian classical music performance" />
+              <div class="card-content">
+                <div class="meta-row">
+                  <span>Workshop</span>
+                  <span>•</span>
+                  <span>Music</span>
+                </div>
+                <h3 class="card-title">Classical music workshops</h3>
+                <p>Experience the discipline, rhythm and soulful creativity behind Indian classical music traditions.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <img src="images/folk.jpg" alt="Folk dance celebration from India" />
+              <div class="card-content">
+                <div class="meta-row">
+                  <span>Festival</span>
+                  <span>•</span>
+                  <span>Folk</span>
+                </div>
+                <h3 class="card-title">Regional folk celebrations</h3>
+                <p>Witness the celebration of regional identities through color, movement, music and shared tradition.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <img src="images/theatre.jpg" alt="Indian theatre performance on stage" />
+              <div class="card-content">
+                <div class="meta-row">
+                  <span>Stage</span>
+                  <span>•</span>
+                  <span>Theatre</span>
+                </div>
+                <h3 class="card-title">Myth, drama and storytelling</h3>
+                <p>Celebrate theatre as a language of memory, emotion, culture and social reflection.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container heritage-layout">
+          <div class="heritage-copy">
+            <div class="eyebrow" style="color: var(--saffron-600); margin-bottom: 18px;">Why it matters</div>
+            <h2>Cultural heritage is a living, breathing legacy.</h2>
+            <p>
+              Indian traditions are not only rooted in the past, but continue to inspire contemporary creativity, identity and national pride.
+              Preserving them means sustaining memory, craftsmanship and community connection across generations.
+            </p>
+            <ul class="feature-list">
+              <li>Protect artistic disciplines that carry centuries of wisdom.</li>
+              <li>Encourage youth participation in cultural learning and performance.</li>
+              <li>Celebrate India’s diversity through shared celebration and appreciation.</li>
+            </ul>
+          </div>
+
+          <div class="stat-card">
+            <div>
+              <div class="eyebrow" style="color: #ffd7a3;">Our mission</div>
+              <strong>100%</strong>
+            </div>
+            <p>Committed to showcasing the richness of Indian classical arts, local traditions and cultural continuity.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cream featured-artist">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow" style="color: var(--saffron-600);">Featured artist</div>
+              <h2 class="section-title">A celebration of master artists</h2>
+            </div>
+            <p>From classical musicians to dancers and theatre practitioners, India’s artists carry living traditions into every modern performance.</p>
+          </div>
+
+          <div class="artist-layout">
+            <div class="artist-portrait">
+              <img src="images/odissi.jpg" alt="Indian classical dancer in traditional performance" />
+            </div>
+            <div class="artist-copy">
+              <div class="eyebrow" style="color: var(--saffron-600);">Spotlight</div>
+              <h3>Indian classical artistry in motion</h3>
+              <p>Through every gesture, rhythm and line of performance, the artist becomes a living archive of culture, memory and devotion. Our platform brings such stories to a wider audience and honours the excellence of India’s cultural legacy.</p>
+              <div class="meta-row" style="margin-top: 18px;">
+                <span>Dance</span>
+                <span>•</span>
+                <span>Music</span>
+                <span>•</span>
+                <span>Theatre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow" style="color: var(--saffron-600);">Our cultural journey</div>
+              <h2 class="section-title">India’s regional art forms</h2>
+            </div>
+            <p>From festive folk movements to refined classical forms, every region contributes to the vibrant mosaic of Indian heritage.</p>
+          </div>
+
+          <div class="journey-grid">
+            <article class="journey-card">
+              <img src="images/odissi.jpg" alt="Odissi classical dance" />
+              <div class="card-content">
+                <div class="meta-row"><span>Dance</span></div>
+                <h3 class="card-title" style="font-size: 1.8rem;">Classical forms</h3>
+              </div>
+            </article>
+            <article class="journey-card">
+              <img src="images/raaga.jpg" alt="Hindustani and Carnatic music performance" />
+              <div class="card-content">
+                <div class="meta-row"><span>Music</span></div>
+                <h3 class="card-title" style="font-size: 1.8rem;">Raga traditions</h3>
+              </div>
+            </article>
+            <article class="journey-card">
+              <img src="images/theatre.jpg" alt="Indian theatre performance scene" />
+              <div class="card-content">
+                <div class="meta-row"><span>Theatre</span></div>
+                <h3 class="card-title" style="font-size: 1.8rem;">Storytelling arts</h3>
+              </div>
+            </article>
+            <article class="journey-card">
+              <img src="images/festival.jpg" alt="Indian festival celebration" />
+              <div class="card-content">
+                <div class="meta-row"><span>Festival</span></div>
+                <h3 class="card-title" style="font-size: 1.8rem;">Regional traditions</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cream">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow" style="color: var(--saffron-600);">Gallery</div>
+              <h2 class="section-title">Expressions of tradition</h2>
+            </div>
+            <p>Moments of rhythm, movement, devotion and celebration from India’s artistic landscape.</p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="images/odissi.jpg" alt="Traditional Indian dance performance" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/raaga.jpg" alt="Classical music heritage" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/folk.jpg" alt="Folk festival celebration" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/veena.jpg" alt="Traditional Indian musical instrument performance" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="newsletter-wrap">
+            <div>
+              <div class="eyebrow" style="color: #f6d5a3;">Stay connected</div>
+              <h3>Subscribe for cultural updates</h3>
+              <p>Receive stories, event details and invitations to India’s artistic celebrations.</p>
+            </div>
+            <form id="newsletterForm" class="newsletter-form" novalidate>
+              <input type="email" name="newsletterEmail" placeholder="Your email address" aria-label="Email address" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="brand footer-brand-logo-wrap">
+              <img src="images/suryansh-logo.png" alt="Suryansh Kala and Sanskriti Foundation logo" class="brand-logo footer-brand-logo" />
+            </div>
+            <div class="footer-strap">Preserving Heritage. Celebrating Tradition.</div>
+            <p class="footer-intro">
+              Dedicated to celebrating, preserving and promoting India’s rich cultural heritage through classical music, dance, theatre and traditional art forms.
+            </p>
+            <div class="social-links" aria-label="Social media links">
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-link" aria-label="Instagram">IG</a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" class="social-link" aria-label="Facebook">f</a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" class="social-link" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="events.html">Upcoming Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Raaga Rangaa</h4>
+            <ul class="footer-list">
+              <li><a href="raaga-rangaa.html">Classical Music</a></li>
+              <li><a href="raaga-rangaa.html">Folk Music</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Naatya Rangaa</h4>
+            <ul class="footer-list">
+              <li><a href="naatya-rangaa.html">Classical Dance</a></li>
+              <li><a href="naatya-rangaa.html">Folk Dance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <form id="footerNewsletterForm" novalidate>
+              <input type="email" name="footerEmail" placeholder="Email address" aria-label="Newsletter email" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-credit">
+            <strong>Suryansh Kala &amp; Sanskriti Foundation</strong>
+            <p>© 2026 Suryansh Kala &amp; Sanskriti Foundation. All Rights Reserved.</p>
+            <p>Designed &amp; Developed by Suryansh Sahu</p>
+            <p>KIIT Explore – Web Designing Project</p>
+            <p>School of Computer Engineering · KIIT Deemed to be University</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>
