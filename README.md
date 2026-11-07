@@ -1,4 +1,4 @@
-# 🇮🇳 Suryansh Kala & Sanskriti Foundation
+# Suryansh Kala & Sanskriti Foundation
 
 A premium Indian cultural events platform celebrating classical music, dance, theatre, folk arts, and the rich heritage of India. Built as a KIIT Explore Web Designing Project using HTML, CSS, and JavaScript.
 
