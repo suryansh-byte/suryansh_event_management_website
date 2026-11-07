@@ -179,7 +179,8 @@ function setupEventFilters() {
 function renderTopEventsHome() {
   const list = document.querySelector('[data-home-events]');
   if (!list) return;
-  const selected = events.slice(0, 4);
+
+  const selected = events.slice(0, 6);
   list.innerHTML = selected.map((event) => `
     <article class="event-card">
       <img src="${event.image}" alt="${event.name}">
@@ -205,7 +206,10 @@ function initCountdown() {
   if (!countdownEl) return;
 
   const nextEvent = events.find((event) => new Date(event.date).getTime() > Date.now());
-  if (!nextEvent) return;
+  if (!nextEvent) {
+    countdownEl.textContent = 'No upcoming events scheduled';
+    return;
+  }
 
   const update = () => {
     const now = new Date().getTime();
